@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Analyse et programmation en géomatique appliquée's documentation!
-============================================================================
+Analyse et programmation en géomatique appliquée
+================================================
 
 Contents:
 
