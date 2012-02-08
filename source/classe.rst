@@ -6,6 +6,10 @@ Lorsque la complexité d'un logiciel augmente, il devient
 nécessaire d'identifier de stratégie pour gérer cette complexité.
 Les classes constituent un outil privilégiées pour cela.
 
+------------
+Introduction
+------------
+
 La classe représente un gabarit qui pourra être utilisée pour
 décrire des entités similaires. Les caractéristiques de ces entités
 seront stockées dans des variables qu'on appelle attributs et
@@ -20,6 +24,20 @@ des fonctions qu'on appelle méthodes.
 Le mot réservé ``class`` débute la déclaration d'une fonction.
 La classe est délimitée par un bloc.
 
+--------------
+Initialisation 
+--------------
+
+Un point possède deux attributs élémentaire:
+un abscisse et une ordonnée.
+On peut les créer assez simplement ::
+
+    >>> p = Point()
+    >>> p.x = 1.0
+    >>> p.y = 2.0
+
+Cette approche nous placera rapidement devant certaines limitations.
+On préférera donc créer une fonction d'initialisation.
 
 .. code-block:: python
 
@@ -36,7 +54,7 @@ La classe est délimitée par un bloc.
             self.y = y
     
 
-La classe ``Point`` possède une fonction particulière pour
+La classe ``Point`` possède maintenant une fonction particulière pour
 son initialisation : ``__init__``. Comme la fonction
 fait partie d'une classe, on l'appelle méthode.
 Par convention, le premier argument d'une méthode est ``self``.
@@ -50,6 +68,9 @@ de donner les attributs par défaut d'une classe. ::
     >>> print point1.y
     2.0
 
+----------------------------------
+Représentation simple d'une entité
+----------------------------------
 
 Une autre méthode particulière est la méthode ``__str__``.
 Cette méthode permet de spécifier une chaîne de caractères
