@@ -68,9 +68,39 @@ Utilisation d'une fonction dans un script
 
 .. literalinclude:: exemples/aire_sphere.py
 
+---------------------
+Paramètres par défaut
+---------------------
+
+Il arrive à l'occasion qu'une fonction possède un paramètre
+dont la valeur est régulièrement la même. 
+
+.. code-block:: python
+
+    def point(x, y, z=0.0):
+        return {'x':x, 'y':y, 'z':z}
+
+De cette façon, on pourra créer un dictionnaire de coordonnées
+sans spécifier explicitement l'altitude si elle n'est pas
+considérée. ::
+
+    >>> point1 = point(2.0, 3.2, 12.0)
+    >>> point2 = point(4.0, -3.0)
+    >>> print point1
+    {'y': 3.2, 'x': 2.0, 'z': 12.0}
+    >>> print point2
+    {'y': -3.0, 'x': 4.0, 'z': 0.0}
+
 
 ---------
 Exercices
 ---------
+
+NDVI
+####
+
+#. Créez la fonction ``ndvi``. Celle-ci reçoit deux
+   compte numérique en paramètre.
+
 
 

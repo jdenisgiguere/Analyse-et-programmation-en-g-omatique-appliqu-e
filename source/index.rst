@@ -11,6 +11,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   fonction
+   classe
+   exemples
 
 
 Indices and tables
